@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_부트스트랩_페이지네이션</title>
+      <!-- 부트스트랩 cdn 방식으로 css 연결 -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <!-- 부트스트랩 cdn 방식으로 js 연결 -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h2>07_부트스트랩_페이지네이션</h2>
+  <p>페이지네이션은 페이지수를 표시하는 '숫자'와 '이전', '다음'버튼을 만들고자 할 때 사용</p>
+  <p>큰 블록의 링크를 사용하며 넓은 클릭 영역을 제공하면서 쉽게 확장할수 있다. 목록의 html 요소로 구성되며 스크린 리더는 이용 가능한 링크의 수를 알려줄 수 있다. nav요소를 사용해 스크린리더나 기타 지원 기술에서 내비게이션 영역으로 식별한다</p>
+  <p>페이지에는 여러개의 내비게이션 영역이 있을 가능성이 높기 때문에 그 목적을 반영하기 위해 nav에 aria-label을 붙히는 것을 권장</p>
+
+  <br><br>
+  
+  <h3>1. 페이지 번호 표시</h3>
+  <nav aria-label="페이지 내비게이션">
+    <ul class="pagination">
+      <li class="page-item"><a href="#" title="" class="page-link">prev</a></li>
+      <li class="page-item"><a href="#" title="" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" title="" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" title="" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" title="" class="page-link">next</a></li>
+    </ul>
+  </nav>
+  <p>.pagination, .page-item, .page-link 클래스 사용</p>
+  <br><br>
+
+  <h3>2. 이전, 다음 아이콘 표시</h3>
+  <nav aria-label="페이지 내비게이션">
+    <ul class="pagination">
+      <li class="page-item"><a href="#" title="이전페이지" class="page-link"><span aria-hidden="true">&laquo;</span></a></li>
+      <li class="page-item"><a href="#" title="1" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" title="2" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" title="3" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" title="4" class="page-link">4</a></li>
+      <li class="page-item"><a href="#" title="5" class="page-link">5</a></li>
+      <li class="page-item"><a href="#" title="다음페이지" class="page-link"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+  </nav>
+
+  <br><br>
+  <h3>3. 선택한 요소에 서식 적용 : active</h3>
+  <nav aria-label="페이지 내비게이션">
+    <ul class="pagination">
+      <li class="page-item"><a href="#" title="이전페이지" class="page-link"><span aria-hidden="true">&laquo;</span></a></li>
+      <li class="page-item"><a href="#" title="1" class="page-link active">1</a></li>
+      <li class="page-item"><a href="#" title="2" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" title="3" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" title="4" class="page-link">4</a></li>
+      <li class="page-item"><a href="#" title="5" class="page-link">5</a></li>
+      <li class="page-item"><a href="#" title="다음페이지" class="page-link"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+  </nav>
+
+  <br><br>
+  <h3>4. 버튼 비활성화 : disabled</h3>
+  <nav aria-label="페이지 내비게이션">
+    <ul class="pagination">
+      <li class="page-item"><a href="#" title="이전페이지" class="page-link"><span aria-hidden="true">&laquo;</span></a></li>
+      <li class="page-item"><a href="#" title="1" class="page-link active">1</a></li>
+      <li class="page-item"><a href="#" title="2" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" title="3" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" title="4" class="page-link">4</a></li>
+      <li class="page-item"><a href="#" title="5" class="page-link">5</a></li>
+      <li class="page-item"><a href="#" title="다음페이지" class="page-link disabled"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+  </nav>
+  <br><br>
+
+  <h3>5. 버튼 크기 조절</h3>
+  <p>class에 pagination-lg 나 pagination-sm 을 추가</p>
+  <br><br>
+
+  <h3>6. 페이지네이션 정렬</h3>
+  <p>ul태그에 justify-content-center 또는 justify-content-end 클래스 적용</p>
+
+</body>
+</html>
