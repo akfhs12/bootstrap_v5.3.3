@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap-세계에서 가장 인기있는 HTML, CSS, JS 라이브러리</title>
   <!-- 부트스트랩 css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- 부트스트랩 js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <style>
-    *{margin: 0; padding: 0;}
-    h1{
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
       margin-top: 50px;
       font-size: 16px;
     }
-    h1 img{
+    h1 img {
       width: 120px;
+    }
+    .cont{
+      display: flex;
+      width: 75%;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .cont > .card{
+      width: 25%;
+      margin: 10px;
     }
   </style>
 </head>
+
 <body>
   <!-- 상단 헤더 영역 -->
   <header>
@@ -29,21 +47,52 @@
 
   <!-- 메인 콘텐츠 영역 -->
   <main>
-    <section>
-      <dl>
-        <dt>부트스트랩 1일차(2024.06.07)</dt>
-        <dd><a href="./20240607/bootstraps.html" title="부트스트랩">부트스트랩소개와 장단점</a></dd>
-        <dd><a href="./20240607/bootstrap_grid_layout.html" title="부트스트랩">부트스트랩 그리드 레이아웃</a></dd>
-        <dd><a href="./20240607/bootstrap_실습.html" title="부트스트랩">부트스트랩 실습</a></dd>
-        <dd><a href="./20240607/04부트스트랩_폼태그.html" title="부트스트랩">부트스트랩 폼태그</a></dd>
-      
-        <dt>부트스트랩 2일차(2024.06.10)</dt>
-        <dd><a href="./20240610/03_부트스트랩_문단_텍스트_관련.html" title="부트스트랩">부트스트랩_문단텍스트관련</a></dd>
-        <dd><a href="./20240610/04_부트스트랩_테이블 관련.html" title="부트스트랩">부트스트랩_테이블 관련</a></dd>
-        <dd><a href="./20240610/05_부트스트랩_이미지관련.html" title="부트스트랩">부트스트랩_이미지관련</a></dd>
-        <dd><a href="./20240610/06_부트스트랩_버튼관련.html" title="부트스트랩">부트스트랩_버튼관련</a></dd>
-        <dd><a href="./20240610/07_부트스트랩_페이지네이션.html" title="부트스트랩">부트스트랩_페이지네이션</a></dd>
-      </dl>
+    <section class="cont">
+      <div class="card">
+        <div>
+          <p class="card-header">부트스트랩 1일차(2024.06.07)</p>
+        </div>
+        <div class="card-body">
+          <p><a href="./20240607/bootstraps.html" title="부트스트랩">부트스트랩소개와 장단점</a></p>
+          <p><a href="./20240607/bootstrap_grid_layout.html" title="부트스트랩">부트스트랩 그리드 레이아웃</a></p>
+          <p><a href="./20240607/bootstrap_실습.html" title="부트스트랩">부트스트랩 실습</a></p>
+          <p><a href="./20240607/04부트스트랩_폼태그.html" title="부트스트랩">부트스트랩 폼태그</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <p class="card-header">부트스트랩 2일차(2024.06.10)</p>
+        </div>
+        <div class="card-body">
+          <p><a href="./20240610/03_부트스트랩_문단_텍스트_관련.html" title="부트스트랩">부트스트랩_문단텍스트관련</a></p>
+          <p><a href="./20240610/04_부트스트랩_테이블 관련.html" title="부트스트랩">부트스트랩_테이블 관련</a></p>
+          <p><a href="./20240610/05_부트스트랩_이미지관련.html" title="부트스트랩">부트스트랩_이미지관련</a></p>
+          <p><a href="./20240610/06_부트스트랩_버튼관련.html" title="부트스트랩">부트스트랩_버튼관련</a></p>
+          <p><a href="./20240610/07_부트스트랩_페이지네이션.html" title="부트스트랩">부트스트랩_페이지네이션</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <p class="card-header">부트스트랩 3일차(2024.06.11)</p>
+        </div>
+        <div class="card-body">
+          <p><a href="./20240611/08_부트스트랩_폼태그.html" title="부트스트랩">부트스트랩_폼태그</a></p>
+          <p><a href="./20240611/09_부트스트랩_경고메세지_닫기.html" title="부트스트랩">부트스트랩_경고메세지_닫기 관련</a></p>
+          <p><a href="./20240611/10_부트스트랩_모달_윈도우.html" title="부트스트랩">부트스트랩_모달_윈도우</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <p class="card-header">부트스트랩 4일차(2024.06.12)</p>
+        </div>
+        <div class="card-body">
+          <p><a href="./20240612/11_부트스트랩_아이콘.html" title="부트스트랩">부트스트랩_아이콘</a></p>
+          <p><a href="./20240612/12_부트스트랩_휘장과 라벨.html" title="부트스트랩">부트스트랩_휘장과 관련</a></p>
+          <p><a href="./20240612/13_부트스트랩_진행바.html" title="부트스트랩">부트스트랩_진행바</a></p>
+          <p><a href="./20240612/14_부트스트랩_카드디자인.html" title="부트스트랩">부트스트랩_카드디자인</a></p>
+        </div>
+      </div>
+
     </section>
   </main>
 
@@ -51,4 +100,5 @@
   <footer></footer>
 
 </body>
+
 </html>

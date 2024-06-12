@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <!-- 부트스트랩 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- 부트스트랩 js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    form {
+      width: 60%;
+      margin: 50px auto;
+    }
+    .box_size div{
+      width: 48%;
+    }
+    .center{
+      margin: 15px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="회원가입" method="post" action="" aria-label="회원가입 폼">
+    <fieldset>
+      <legend class="text-center mb-4">회원가입</legend>
+      <div class="d-flex justify-content-between box_size">
+        <div>
+          <label for="f_name">First Name</label><input type="text" id="f_name" placeholder="홍" class="form-control" required>
+        </div>
+        <div>
+          <label for="l_name">Last Name</label><input type="text" id="l_name" placeholder="길동" class="form-control" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="u_name" class="form-label">Username</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" id="u_name" class="form-control" placeholder="Username" aria-label="Username" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email(Optional)</label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com" aria-label="email">
+      </div>
+
+      <div class="mb-3">
+      <label for="pw" class="form-label">Password</label>
+      <input type="password" id="pw" placeholder="1~8자리" class="form-control" aria-label="password" maxlength="8">
+      </div>
+
+      <div class="mb-3">
+      <label for="pw_re" class="form-label">Password 확인</label>
+      <input type="password" id="pw_re" placeholder="비밀번호를 똑같이 입력해주세요." class="form-control" aria-label="패스워드 확인" maxlength="8">
+    </div>
+
+      <div class="d-flex justify-content-between box_size">
+        <div>
+          <label for="city">도시</label>
+          <select id="city" name="city" class="form-select mb-3">
+            <option value="">도/시</option>
+            <option value="서울">서울</option>
+            <option value="부산">부산</option>
+            <option value="대전">대전</option>
+            <option value="대구">대구</option>
+            <option value="울산">울산</option>
+            <option value="인천">인천</option>
+          </select>
+        </div>
+        <div>
+          <label for="gu">구</label>
+          <select id="gu" name="gu" class="form-select mb-3">
+            <option value="">구/동/읍</option>
+            <option value="종로구">종로구</option>
+            <option value="중구">중구</option>
+            <option value="서구">서구</option>
+            <option value="마포구">마포구</option>
+            <option value="강남구">강남구</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="center">
+      <input type="submit" value="가입하기" class="btn btn-outline-primary">
+      <input type="submit" value="취소하기" class="btn btn-outline-secondary">
+    </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
